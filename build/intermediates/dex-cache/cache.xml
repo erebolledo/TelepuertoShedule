@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\erebolledo\StudioProjects\TelepuertoShedule\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="830338cff7f2bdac5e6ab56a12e826603df364ee">
+        <dex dex="C:\Users\erebolledo\StudioProjects\TelepuertoShedule\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c24d5c6e99082978d1d7f6eba81c0da71db02215\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\erebolledo\StudioProjects\TelepuertoShedule\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\erebolledo\StudioProjects\TelepuertoShedule\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_a42bdff98853046bf82d022d95f2da94116cc65b\classes.dex" />
+    </item>
+
+</items>

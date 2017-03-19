@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="journal_entry_listitem_text_color">#003366</color>
+    <color name="note_text_disabled">#333333</color>
+    <color name="reaction_color_selected">#003366</color>
+    <color name="static_text_color">#003366</color>
+    <color name="symptom_color_selected">#003366</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Guardias Telepuerto</string>
+    <string name="hello">Hello World, SimpleCalendar!</string>
+    <style name="calendar_event_style" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">#FF6600</item>
+		<item name="android:textStyle">bold
+		</item>
+		<item name="android:textSize">8sp</item>
+	</style>
+</resources>

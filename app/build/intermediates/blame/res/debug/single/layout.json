@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rotacion.xml",
+        "source": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\src\\main\\res\\layout\\rotacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\res\\merged\\debug\\layout\\simple_calendar_view.xml",
+        "source": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\src\\main\\res\\layout\\simple_calendar_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\res\\merged\\debug\\layout\\feriados.xml",
+        "source": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\src\\main\\res\\layout\\feriados.xml"
+    },
+    {
+        "merged": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\res\\merged\\debug\\layout\\guardias.xml",
+        "source": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\src\\main\\res\\layout\\guardias.xml"
+    },
+    {
+        "merged": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\res\\merged\\debug\\layout\\calendar_day_gridcell.xml",
+        "source": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\src\\main\\res\\layout\\calendar_day_gridcell.xml"
+    },
+    {
+        "merged": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\res\\merged\\debug\\layout\\feriado.xml",
+        "source": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\src\\main\\res\\layout\\feriado.xml"
+    },
+    {
+        "merged": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\src\\main\\res\\layout\\main.xml"
+    }
+]
