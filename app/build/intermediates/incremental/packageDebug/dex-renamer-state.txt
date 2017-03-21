@@ -1,7 +1,4 @@
-#Sun Mar 19 12:00:16 BOT 2017
-base.0=C\:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_a42bdff98853046bf82d022d95f2da94116cc65b
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_c24d5c6e99082978d1d7f6eba81c0da71db02215\\classes.dex
-base.1=C\:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_c24d5c6e99082978d1d7f6eba81c0da71db02215
-file.0=C\:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_a42bdff98853046bf82d022d95f2da94116cc65b\\classes.dex
+#Mon Mar 20 16:45:40 BOT 2017
+base.0=C\:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\erebolledo\\StudioProjects\\TelepuertoShedule\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

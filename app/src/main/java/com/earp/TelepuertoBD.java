@@ -16,23 +16,23 @@ public class TelepuertoBD extends SQLiteOpenHelper {
  
     @Override
     public void onCreate(SQLiteDatabase db) {
-        //Se ejecuta la sentencia SQL de creación de la tabla
+        //Se ejecuta la sentencia SQL de creaci?n de la tabla
         db.execSQL(sqlCreate);
         db.execSQL(createFeriado);
     }
  
     @Override
     public void onUpgrade(SQLiteDatabase db, int versionAnterior, int versionNueva) {
-        //NOTA: Por simplicidad del ejemplo aquí utilizamos directamente la opción de
-        //      eliminar la tabla anterior y crearla de nuevo vacía con el nuevo formato.
-        //      Sin embargo lo normal será que haya que migrar datos de la tabla antigua
-        //      a la nueva, por lo que este método debería ser más elaborado.
+        //NOTA: Por simplicidad del ejemplo aqu? utilizamos directamente la opci?n de
+        //      eliminar la tabla anterior y crearla de nuevo vac?a con el nuevo formato.
+        //      Sin embargo lo normal ser? que haya que migrar datos de la tabla antigua
+        //      a la nueva, por lo que este metodo deberia de ser mas elaborado
  
-        //Se elimina la versión anterior de la tabla
+        //Se elimina la versi?n anterior de la tabla
         db.execSQL("DROP TABLE IF EXISTS Rotacion");
         db.execSQL("DROP TABLE IF EXISTS Feriado");
  
-        //Se crea la nueva versión de la tabla
+        //Se crea la nueva versi?n de la tabla
         db.execSQL(sqlCreate);
         db.execSQL(createFeriado);        
     }

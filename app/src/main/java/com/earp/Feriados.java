@@ -14,7 +14,8 @@ import org.apache.http.impl.client.DefaultHttpClient;
 public class Feriados {
 	
 	public String getContenido(String annio){
-		String html = "";
+		String html;
+		html = "";
 		HttpClient client = new DefaultHttpClient();
 		HttpGet request = new HttpGet("http://www.cuandoenelmundo.com/calendario/venezuela/"+annio);
 		try{
@@ -73,10 +74,14 @@ public class Feriados {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		System.out.println("prueba");
+/*	public static void main(String[] args) {
+		System.out.println("otra prueba");
+		Feriados fer = new Feriados();
+		String fecha = fer.getContenido("2017");
+		//public String fech = fecha;
+		System.out.println(fecha);
 		// TODO Auto-generated method stub
 
-	}
+	}*/
 
 }

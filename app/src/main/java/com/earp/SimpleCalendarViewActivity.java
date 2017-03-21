@@ -53,7 +53,7 @@ public class SimpleCalendarViewActivity extends Activity implements OnClickListe
 		private final DateFormat dateFormatter = new DateFormat();
 		private static final String dateTemplate = "MMMM yyyy";
 		public String[] meses = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
-		public int primerGrupo= 4;//ACA SE COLOCA EL PRIMER GRUPO DEL AÑO
+		public int primerGrupo= 4;//ACA SE COLOCA EL PRIMER GRUPO DEL Aï¿½O
 		public Spinner spinner;
         public String[] grupos = {"A","B","C","D","E","F"};
 		int[] diasDeMes = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -194,7 +194,7 @@ public class SimpleCalendarViewActivity extends Activity implements OnClickListe
 	        //Cursor c = db.rawQuery(" SELECT codigo,nombre FROM Usuarios WHERE nombre='Usuario1' ", null);
 	        //Nos aseguramos de que existe al menos un registro
 	        /*if (c.moveToFirst()) {
-	             //Recorremos el cursor hasta que no haya más registros
+	             //Recorremos el cursor hasta que no haya mï¿½s registros
 	             do {
 	                  String codigo= c.getString(0);
 	                  String nombre = c.getString(1);
@@ -228,7 +228,7 @@ public class SimpleCalendarViewActivity extends Activity implements OnClickListe
     			String aux2[] = aux[1].split("</td><td class='desc'>");
     			String aux3[] = aux2[1].split("<span class='subs'>");
     			String dia = aux[0];        	
-    			String mes = aux2[0];
+    			String mes = aux2[0].toUpperCase();
     			String fecha = dia+" "+mes+" "+_calendar.get(Calendar.YEAR);;
     			String feriado = aux3[0];
     			Cursor c = db.rawQuery("SELECT * FROM Feriado WHERE fecha='"+fecha+"'", null);
@@ -236,7 +236,7 @@ public class SimpleCalendarViewActivity extends Activity implements OnClickListe
     				db.execSQL("INSERT INTO Feriado (fecha, feriado) VALUES ('"+fecha+"', '"+feriado+"')");				
     			c.close();
             	Log.i("Cadena picada 223", dia+" "+mes+" "+year+" "+feriado+" longitud "+td.length);
-
+/* Problema 20/03/2017
     			aux =td[2].split("</td><td class='month redday'>");
     			aux2 = aux[1].split("</td><td class='desc'>");
     			aux3 = aux2[1].split("<span class='subs'>");
@@ -248,7 +248,8 @@ public class SimpleCalendarViewActivity extends Activity implements OnClickListe
     			if (!c.moveToFirst())
     				db.execSQL("INSERT INTO Feriado (fecha, feriado) VALUES ('"+fecha+"', '"+feriado+"')");				
     			c.close();
-            	Log.i("Cadena picada 223", dia+" "+mes+" "+year+" "+feriado+" longitud "+td.length);            	
+            	Log.i("Cadena picada 223", dia+" "+mes+" "+year+" "+feriado+" longitud "+td.length);
+*/
     		}
     		db.close();
 		}
@@ -308,13 +309,14 @@ public class SimpleCalendarViewActivity extends Activity implements OnClickListe
 	                        // do nothing
 	                    }
 	                 })
-	                 .show();	            	
+	                 .show();
 	                return true;
 	                
 	            case R.id.actualizarFeriado:
-	            	String corte[] = html.getContenido(String.valueOf(_calendar.get(Calendar.YEAR))).split(" Festivos</th></tr>");
-	            	corte = corte[1].split("</table>");
+	            	String corte[] = html.getContenido(String.valueOf(_calendar.get(Calendar.YEAR))).split("Festivos</h2>");
+                    corte = corte[1].split("</table>");
 	            	actualizarFeriados(corte[0]);
+					actualizarFeriados(corte[1]);
 	            	setGridCellAdapterToDate(month, year);
 	                return true;
 	                
@@ -347,7 +349,7 @@ public class SimpleCalendarViewActivity extends Activity implements OnClickListe
 						public void onClick(DialogInterface dialog, int which) {
 							String grupo = String.valueOf(spinner2.getSelectedItemPosition());
 							String ano = spinner3.getSelectedItem().toString();							
-							Log.i("AlertDialog","Año "+ano+" Grupo "+grupo);
+							Log.i("AlertDialog","Aï¿½o "+ano+" Grupo "+grupo);
 							actualizarTablaRotacion(Integer.parseInt(ano), Integer.parseInt(grupo));
 						}
 					})
@@ -396,7 +398,8 @@ public class SimpleCalendarViewActivity extends Activity implements OnClickListe
 					feriados.add(c.getString(0));
 				c.close();
 				db.close();
-				Log.d("Hasta aqui voy bien 352",feriados.toString());				
+				Log.d("Hasta aqui voy bien 352",feriados.toString());
+				String miprueba = feriados.toString();
 
 				adapter = new GridCellAdapter(getApplicationContext(), R.id.calendar_day_gridcell, month, year);
 				_calendar.set(year, month - 1, _calendar.get(Calendar.DAY_OF_MONTH));
@@ -523,7 +526,7 @@ public class SimpleCalendarViewActivity extends Activity implements OnClickListe
 
 				//Obtengo la sumatoria de los dias anteriores al mes en curso
 				public int diasAnt(int mesActual){
-					//En caso de año bisiesto
+					//En caso de aï¿½o bisiesto
 					int aux1 = _calendar.get(Calendar.YEAR);
 					if ((aux1 % 4 == 0) && ((aux1 % 100 != 0) || (aux1 % 400 == 0)))					
 						diasDeMes[1]=29;
@@ -804,7 +807,7 @@ public class SimpleCalendarViewActivity extends Activity implements OnClickListe
 												
 						String feriado = gridcell.getText()+" "+themonth+" "+theyear;
 						Log.i("Resultado linea 765", feriado);
-						if(feriados.contains(feriado))
+						if(feriados.contains(feriado.toUpperCase()))
 							gridcell.setTextColor(Color.BLUE);
 
 						if(fecha1.equals(fecha2))
